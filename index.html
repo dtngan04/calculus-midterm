@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BÀI GIỮA KỲ TOÁN CAO CẤP</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="./img/icon-math.png">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <script src="https://kit.fontawesome.com/2ff7201d77.js" crossorigin="anonymous"></script>
+        <style>
+            body,h1,h2,h3,h4,h5 {
+                font-family: "Time New Roman";
+            }
+            h1{
+              font-size: 60px;
+            }
+            h4{
+              font-size: 25px;
+              font-weight: bold;
+              text-align: justify;;
+            }
+            div{
+              border-style: none;  
+            }
+            .w3-col-l8-s12{
+                margin: auto;
+                width: 800px;
+            }
+            a{
+              font-size: 18px;
+              text-decoration: none;
+            }
+            .font{
+              padding: 0;
+              margin: 0;
+            }
+            p{
+              display: block;
+            }
+            #myDIV, #myDIV1, #myDIV2, #myDIV3, #myDIV4, #myDIV5{
+              display: none;
+            }
+            button{
+              border-radius: 0cm;
+              width: 80%;
+              height: 38px;
+              text-align: center;
+              margin: 2px;
+              font-size: 22px;
+              font-weight: 400;
+              background: none;
+              display: inline-block;
+              position: relative;
+              left: 50%;
+              transform: translateX(-50%);;
+            }
+            button:hover{
+              font-style: italic;
+              font-size: 24px;
+              font-weight: bold;
+              text-decoration: underline;
+              
+              cursor: pointer;
+            }
+            .in_button{
+              font-weight: 100;
+              font-size: 20px;
+            }
+            .w3-container{
+              width: 600px;
+              margin: auto;
+            }
+            .lec-name{
+              width: 100%;
+              margin-left: 138px;
+              padding-left: 200px;
+            }
+        </style>
+    </head>
+
+    <body>
+    <!-- w3-content defines a container for fixed size centered content, 
+    and is wrapped around the whole page content, except for the footer in this example -->
+    <div class="w3-content" style="max-width:1400px; background-color: white;">
+
+    <!-- Header -->
+    <header class="w3-container w3-center w3-padding--32"> 
+        <h1><B>CALCULUS</B></h1>
+        <h3 class="lec-name"><b>Lecturer:</b> Trần Thị Bảo Trâm</h3>
+    </header>
+
+    <!-- Grid -->
+  <div class="w3-row w3-padding-0">
+    <!-- Blog entries -->
+    <!-- Blog entry -->
+    <div class="w3-col-l8-s12">
+        <div class="w3-margin w3-margin-top">
+            <img src="img/avatar_g.jpg" style="width:100%">
+            <div class="w3-container w3-white">
+                <h3><b>Member:</b>
+                    <br>- Tạ Bá Đạt
+                    <br>- Đặng Thị Thúy Ngân
+                </h3>
+            </div>
+        </div>
+    <!-- Blog entry -->
+        <div class="w3-margin w3-white">
+            <img src="./img/calculus.png" alt="Nature" style="width:100%; height: 250px;">
+            <div class="w3-container">
+            <h4><b>Nhiệm vụ 1: Tìm hiểu các ứng dụng của phần học giải tích trong cuộc sống, kinh tế, kĩ thuật, bản thân Toán học,... khuyến khích đọc thêm tài liệu nước ngoài cho phần trình bày thêm phong phú.</b></h5>
+        </div>
+
+        <div class="w3-container">
+          <div>
+            <button class="w3-white" onclick="myFunction()">
+              Engineering
+            </button>
+            <div id = "myDIV">
+              <p class="in_button">
+                Space Flight Engineering: <br>
+- Before launching a rocket or exploratory probe, engineers must use calculus to figure out the gravitational pulls of the sun and moon in order to know how to launch a probe or hit the velocity needed to orbit the earth.
+<br> P = mv => P' = dmv/dt
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <button class="w3-white" onclick="myFunction1()">
+              Medicine
+            </button>
+            <div id = "myDIV1">
+              <p class="in_button">
+                Bacterial growth: <br>
+- Biologists use differential calculus to compute the exact bacterial growth rate in a culture by varying environmental factors such as temperature and food source.   
+                <br>
+                kN = dN/dt 
+                <br>
+                Cancer: <br>
+- Calculus is used to determine the growth or shrinkage and number of cells of a cancerous tumor. Using an exponential function, oncologists analyze the progression or regression of a disease.
+                <br>
+                Surgical Control of Red Blood Cells: <br>
+- The blood in the human body is made up of red blood cells. While undergoing surgery, a patient’s blood volume has to be maintained by injecting a saline solution that mixes quickly with the blood and dilutes as time passes. Calculus is used for computing the volume of red blood cells so the proper amount of saline solution can be given to the patient during surgery.
+                <br>
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <button class="w3-white" onclick="myFunction2()">
+              Business
+            </button>
+            <div id = "myDIV2">
+              <p class="in_button">
+                Credit card payments: <br>
+- Calculus is used for setting payment structures and the minimum due amount by the credit card company by considering variables such as interest rates and fluctuating balance. 
+<br>
+Economics: <br>
+- The price elasticity of supply and demand is determined using calculus. Economists use variables such as the supply-demand curve to find the exact measure of elasticity at a particular point according to changes in price.
+                <br>
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <button class="w3-white" onclick="myFunction3()">
+              Research Analytics
+            </button>
+            <div id = "myDIV3">
+              <p class="in_button">
+                Variables in manufacturing: <br>
+- Research analysts use calculus while observing different processes. Based on collected data, companies can optimize their output, productivity, and efficiency, which improves the industry’s quality and revenue.
+<br>
+Evaluate survey data: <br>
+- Statisticians make use of survey data to find a range of answers for different questions. Using calculus allows them to make accurate predictions, which helps their decision making process.
+<br>
+Computing birth and death rates: <br>
+- Ecologists use calculus to make dynamic population models that showcase growth without any environmental constraints. Through calculus, accurate predictions on population changes can be made, taking birth and death rates into account.   
+<br>
+Simulation for video games: <br>
+- Graphic designers use calculus to understand 3D models created through changing conditions.  Based on the results derived from calculus, video games and animated movies are made with a real world perspective.
+<br>              
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <button class="w3-white" onclick="myFunction4()">
+              Meteorology
+            </button>
+            <div id = "myDIV4">
+              <p class="in_button">
+                Computing Weather Patterns: <br>
+Meteorologists use differential calculus equations to predict the effects of varying weather conditions on the atmosphere with respect to temperature, humidity, and pressure changes.  
+            <br>
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <button class="w3-white" onclick="myFunction5()">
+              Kỹ Thuật
+            </button>
+            <div id = "myDIV5">
+              <p class="in_button">
+                abc
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- <div class="w3-container">
+          <div class="w3-row">
+            <div class="w3-col m8 s12">
+              <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE &raquo;</b></button></p>
+            </div>
+          </div>
+        </div> -->
+    </div>
+
+
+    <!-- Blog entry -->
+      <div class="w3-margin w3-white">
+        <img src="./img/woods.jpg" alt="Norway" style="width:100%">
+        <div class="w3-container">
+            <h3><b>Nhiệm vụ 2</b></h3>
+            <h5>Title description, <span class="w3-opacity">April 2, 2014</span></h5>
+        </div>
+
+        <div class="w3-container">
+            <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
+            tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+            <div class="w3-row">
+                <div class="w3-col m8 s12">
+                    <!-- <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE &raquo;</b></button></p> -->
+                    <p>
+                        <button>
+                            <a href="https://tinhte.vn/">bamdi</a>
+                        </button>
+                    </p>
+                </div>
+                <!-- <div class="w3-col m4 w3-hide-small">
+                    <p><span class="w3-padding-large w3-right"><b>Comments &nbsp;</b> <span class="w3-badge">2</span></span></p>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- END BLOG ENTRIES -->
+  </div>
+
+<!-- Introduction menu -->
+<div class="w3-col l4">
+  <!-- About Card -->
+  
+
+  
+  <!-- Posts -->
+  <!-- <div class="w3-card w3-margin">
+    <div class="w3-container w3-padding">
+      <h4>Popular Posts</h4>
+    </div>
+    <ul class="w3-ul w3-hoverable w3-white">
+      <li class="w3-padding-16">
+        <img src="/w3images/workshop.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Lorem</span><br>
+        <span>Sed mattis nunc</span>
+      </li>
+      <li class="w3-padding-16">
+        <img src="/w3images/gondol.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Ipsum</span><br>
+        <span>Praes tinci sed</span>
+      </li> 
+      <li class="w3-padding-16">
+        <img src="/w3images/skies.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Dorum</span><br>
+        <span>Ultricies congue</span>
+      </li>   
+      <li class="w3-padding-16 w3-hide-medium w3-hide-small">
+        <img src="/w3images/rock.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Mingsum</span><br>
+        <span>Lorem ipsum dipsum</span>
+      </li>  
+    </ul>
+  </div>
+  <hr>  -->
+ 
+  <!-- Labels / tags -->
+  <!-- <div class="w3-card w3-margin">
+    <div class="w3-container w3-padding">
+      <h4>Tags</h4>
+    </div>
+    <div class="w3-container w3-white">
+    <p><span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">London</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">IKEA</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">NORWAY</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">DIY</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Baby</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Family</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Clothing</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Shopping</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Sports</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Games</span>
+    </p>
+    </div>
+  </div> -->
+  
+<!-- END Introduction Menu -->
+</div>
+
+<!-- END GRID -->
+</div><br>
+
+<!-- END w3-content -->
+  </div>
+
+<!-- Footer -->
+<footer class="w3-container w3-dark-grey w3-padding-22 w3-margin-top">
+  <p>Thiết kế bởi <a href="https://www.facebook.com/thyyann.04" target="_blank">Đặng Thị Thúy Ngân</a></p>
+</footer>
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("myDIV");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
+  function myFunction1() {
+    var x = document.getElementById("myDIV1");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
+  function myFunction2() {
+    var x = document.getElementById("myDIV2");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
+  function myFunction3() {
+    var x = document.getElementById("myDIV3");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
+  function myFunction4() {
+    var x = document.getElementById("myDIV4");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
+  function myFunction5() {
+    var x = document.getElementById("myDIV5");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+  </script>
+
+</body>
+</html>
